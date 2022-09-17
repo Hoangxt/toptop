@@ -22,3 +22,6 @@ Main video view:
   getServerSideProps: moi lan reload lai page thi no se goi lai api
 
 types.d.ts :[type api will have] all properties of api
+
+Google oauth
+npm install @react-oauth/google jwt-decode --legacy-peer-deps
