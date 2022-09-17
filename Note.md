@@ -23,5 +23,11 @@ Main video view:
 
 types.d.ts :[type api will have] all properties of api
 
-Google oauth
+Google oauth:
 npm install @react-oauth/google jwt-decode --legacy-peer-deps
+
+create user store: [/utils/index.ts]
+create auth.ts in pages/api
+
+create store/authStore.ts
+using zustand
