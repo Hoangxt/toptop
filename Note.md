@@ -33,3 +33,5 @@ create store/authStore.ts
 using zustand
 
 upload video
+
+video detail
