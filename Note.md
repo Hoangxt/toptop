@@ -13,3 +13,5 @@ npx tailwindcss init -p
 
 in siderbar.tsx
 px-2 py-4 hidden xl:block => full screen is will show p tag in sidebar
+
+Discover: 1:08:22
