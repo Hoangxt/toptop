@@ -15,3 +15,10 @@ in siderbar.tsx
 px-2 py-4 hidden xl:block => full screen is will show p tag in sidebar
 
 Discover: 1:08:22
+
+Main video view:
+
+- get api (next.js)
+  getServerSideProps: moi lan reload lai page thi no se goi lai api
+
+types.d.ts :[type api will have] all properties of api
