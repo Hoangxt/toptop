@@ -31,3 +31,5 @@ create auth.ts in pages/api
 
 create store/authStore.ts
 using zustand
+
+upload video
