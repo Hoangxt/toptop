@@ -44,3 +44,5 @@ search:
 setup search page, search api, query in utils
 
 search by discover page: create api
+
+next.js: config next.config.js
