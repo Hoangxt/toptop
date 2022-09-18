@@ -39,3 +39,6 @@ video detail
 Dispatch, SetStateAction
 
 Fetch All user
+
+search:
+setup search page, search api, query in utils
