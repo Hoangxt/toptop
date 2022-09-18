@@ -13,17 +13,16 @@ import { GoVerified } from "react-icons/go";
 
 const Search = ({ videos }: { videos: Video[] }) => {
   const router = useRouter();
-  const { searchTerm } = router.query;
+  const { searchTerm }: any = router.query;
   const { allUsers } = useAuthStore();
 
   const [isAccounts, setIsAccounts] = useState<Boolean>(true);
-  const [videosList, setVideosList] = useState<Video[]>([]);
 
   const accounts = isAccounts ? "border-b-2 border-black" : "text-gray-400";
   const isVideos = !isAccounts ? "border-b-2 border-black" : "text-gray-400";
 
   const searchAccounts = allUsers.filter((user: IUser) =>
-    user.userName.toLowerCase().includes(searchTerm as string)
+    user.userName.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   return (
@@ -59,7 +58,7 @@ const Search = ({ videos }: { videos: Video[] }) => {
                   </div>
                   <div className="hidden xl:block">
                     <p className="flex gap-1 items-center lowercase text-primary font-bold">
-                      {user.userName.replaceAll(" ", "")}
+                      {user.userName}
                       <GoVerified className="text-blue-400" />
                     </p>
                     <p className="capitalize text-gray-400 text-sm">
@@ -87,6 +86,7 @@ const Search = ({ videos }: { videos: Video[] }) => {
     </div>
   );
 };
+// topic from api/search
 export const getServerSideProps = async ({
   params: { searchTerm },
 }: {

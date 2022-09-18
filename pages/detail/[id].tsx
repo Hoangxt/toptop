@@ -91,6 +91,7 @@ const Detail = ({ postDetails }: IProps) => {
               loop
               src={post?.video?.asset.url}
               className=" h-full cursor-pointer"
+              controls
             ></video>
           </div>
           {/* play icon */}

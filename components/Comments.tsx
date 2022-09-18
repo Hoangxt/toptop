@@ -38,7 +38,7 @@ const Comments = ({
     <div className="border-t-2 border-gray-200 pt-4 px-10 bg-[#F8F8F8] border-b-2 lg:pb-0 pb-[100px]">
       <div className="overflow-scroll lg:h-[475px]">
         {comments?.length ? (
-          comments.map((item, idx) => (
+          comments?.map((item: IComment, idx: number) => (
             <>
               {allUsers.map(
                 (user: IUser) =>
