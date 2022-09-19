@@ -7,7 +7,7 @@ import { GoVerified } from "react-icons/go";
 import { IUser } from "../types";
 import useAuthStore from "../store/authStore";
 
-const SuggestedAccounts = () => {
+const SuggestedAccounts: NextPage = () => {
   const { fetchAllUsers, allUsers } = useAuthStore();
 
   useEffect(() => {

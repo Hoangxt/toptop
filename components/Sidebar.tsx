@@ -10,7 +10,7 @@ import Discover from "./Discover";
 import SuggestedAccounts from "./SuggestedAccounts";
 import Footer from "./Footer";
 
-const Sidebar = () => {
+const Sidebar: NextPage = () => {
   const [showSidebar, SetShowSidebar] = useState(true);
 
   const userProfile = false;

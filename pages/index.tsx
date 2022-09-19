@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import Head from "next/head";
 import axios from "axios";
 import { Video } from "../types";
 import VideoCard from "../components/VideoCard";
@@ -10,13 +11,18 @@ interface IProps {
 
 const Home = ({ videos }: IProps) => {
   return (
-    <h1 className="flex flex-col gap-10 videos h-full">
-      {videos.length ? (
-        videos.map((video: Video) => <VideoCard post={video} key={video._id} />)
-      ) : (
-        <NoResults text={"No Videos"} />
-      )}
-    </h1>
+    <>
+      <title>TopTop</title>
+      <h1 className="flex flex-col gap-10 videos h-full">
+        {videos.length ? (
+          videos.map((video: Video) => (
+            <VideoCard post={video} key={video._id} />
+          ))
+        ) : (
+          <NoResults text={"No Videos"} />
+        )}
+      </h1>
+    </>
   );
 };
 
